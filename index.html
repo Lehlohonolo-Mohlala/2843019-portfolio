@@ -1,34 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lehlohonolo Mohlala's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lehlohonolo Mohlala | Portfolio & CV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #111827;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e5e7eb;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #111827;
+      margin-bottom: 15px;
+      border-left: 5px solid #111827;
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #e5e7eb;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
 <body>
-  
-    <h1>Welcome to Lehlohonolo Mohlala's Portfolio</h1>
-  <nav>
-    <ul>
-      <li> <a href="#" > Home </a> </li>
-      <li> <a href="#" > Projects </a> </li>
-      <li> <a href="#" > Contact </a> </li>
-    </ul>
-  </nav>
-  <main>
+  <header>
+    <h1>Lehlohonolo Mohlala</h1>
+    <p>
+      Final-year Computer Science and Applied Mathematics student at the University of the Witwatersrand. Passionate about data, technology, problem-solving, leadership and using education to break generational barriers.
+    </p>
+
+
+    <a class="btn" href="cv.pdf" target="_blank">View / Download My CV</a>
+    <a class="btn" href="mailto:mohlalalehlohonolo5@gmail.com">Contact Me</a>
+  </header>
+
+  <main class="container">
     <section>
-      <h2> About Me</h2>
-      <p> My name is Lehlohonolo Mohlala ,raised by a single parent Palesa Mohlala . I am a brother of three siblings . I am a Computer Science and Applied Mathematics final year student at the University of the Witwatersrand.</p>
-      <p> Mathematics is my favourite Subject.</p>
-    
+      <h2>About Me</h2>
+      <p>
+        I am a young black student from Katlehong who believes in the power of education, technology and leadership. Growing up, I saw how lack of information and opportunity can limit young people. That experience shaped my mission: to use my skills in Computer Science, Applied Mathematics and data-driven thinking to solve real problems and open doors for others.
+      </p>
+      <br />
+      <p>
+        I am interested in data analytics, quantitative modelling, software development, consulting and opportunities that allow me to learn across different industries.
+      </p>
     </section>
-    <article>
-      <h3>Latest Project</h3>
-      <p> I created an app called Job Seeker which connects employers and employees online ,according to job wanted by the employee and the type of candidates required by the employer .This helps people from rural areas to market by just uplaoding their CVs on their accounts and waiting for notifications for job match.Only thing will be left is interviews.</p>
-    </article>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of the Witwatersrand</strong> BSc Computer Science and Applied Mathematics</li>
+        <li>Final-year student, 2026</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience & Leadership</h2>
+      <ul>
+        <li><strong>Wits Tutor</strong> Supporting students academically and helping them understand complex concepts.</li>
+        <li><strong>CSAM Student Council Event Officer</strong> Helping organise academic, career and networking initiatives for students.</li>
+        <li><strong>WCCO Volunteer</strong> Participating in community outreach and service initiatives.</li>
+        <li><strong>Senior Buddy Programme Mentor</strong> Supporting first-year students as they transition into university life.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Municipal Service Delivery Reporting Portal</strong> A web-based platform that allows residents to submit, track and escalate municipal service delivery issues while supporting transparency through a public dashboard.
+        </li>
+        <li>
+          <strong>Recruitment Matching Platform</strong> A platform concept focused on connecting employers and job seekers more effectively.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">Java</span>
+        <span class="skill">C++</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">HTML & CSS</span>
+        <span class="skill">Data Analytics</span>
+        <span class="skill">Scientific Computing</span>
+        <span class="skill">Numerical Methods</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Leadership</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/Sardines-SD/Start.git" target="_blank">GitHub Project Repository</a></li>
+        <li><a href="mailto:mohlalalehlohonolo5@gmail.com">Email Me</a></li>
+        <li><a href="https://www.linkedin.com/in/lehlohonolo-mohlala-769288316" target="_blank">LinkedIn Profile</a></li>
+      </ul>
+    </section>
   </main>
+
   <footer>
-    <p>© 2026 2843019 | Built with Semantic HTML</p>
+    <p>© 2026 Lehlohonolo Mohlala | Portfolio & CV</p>
   </footer>
 </body>
 </html>
+
